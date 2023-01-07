@@ -21,9 +21,9 @@ function Categorias(){
                 {categorias.map((categoria,i)=>{
                     return(
                             <div key={i} className="m-1 rounded text-bg-secondary m-2 p-2 col">
-                                <div className="card-title p-2 m-2">{categoria.category.toUpperCase()}</div>
+                                <div className="card-title p-2 m-2 fw-bold">{categoria.category.toUpperCase()}</div>
                                 <div className="card-body">
-                                    <h5 className="card-header p-2 m-2">Cantidad de artículos</h5>
+                                    <h5 className="card-header p-2 m-2 fw-normal fs-6">Cantidad de artículos</h5>
                                     <p className="card-text p-2 m-2">{categoria.countByCategory}</p>
                                 </div>
                             </div>

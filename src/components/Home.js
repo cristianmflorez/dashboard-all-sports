@@ -15,9 +15,9 @@ function Home(){
       <main className="container text-center ">
         <Totales />
         <div>
-          <div className="row align-items-start me-2 ms-2">
-            <div className="col"><UltimoUsuario /></div>
-            <div className="col"><UltimoProducto /></div>
+          <div className="row row-col-1 align-items-start me-2 ms-2">
+            <div className="col-12 col-sm-6"><UltimoUsuario /></div>
+            <div className="col-12 col-sm-6"><UltimoProducto /></div>
           </div>
           <div><Categorias /></div>
         </div>
