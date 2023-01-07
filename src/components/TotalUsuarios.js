@@ -13,9 +13,12 @@ function TotalUsuarios(){
  }, []);
 
  return(
-    <div>
-        <h2>Número de usuarios</h2>
-        <h3>{total}</h3>
+    <div className="card text-bg-secondary mb-3">
+        <div className="card-header">USUARIOS</div>
+        <div className="card-body">
+            <h5 className="card-title">Usuarios registrados</h5>
+            <p className="card-text">{total}</p>
+        </div>
     </div>
  )
 }

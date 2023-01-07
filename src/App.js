@@ -1,24 +1,14 @@
-import Categorias from './components/Categorias';
-import Header from './components/Header'
-import Totales from './components/Totales'
-import UltimoProducto from './components/UltimoProducto';
-import UltimoUsuario from './components/UltimoUsuario';
+import Home from "./components/Home";
+import { Route, Routes } from "react-router-dom";
+import ListadoProductos from "./components/ListadoProductos";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
-      <main>
-        <Totales />
-        <UltimoUsuario />
-        <UltimoProducto />
-        <Categorias />
-      </main>
-      <footer>
-
-      </footer>
+    <div>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/ListadoProductos" element={<ListadoProductos/>}/>
+      </Routes>
     </div>
   );
 }

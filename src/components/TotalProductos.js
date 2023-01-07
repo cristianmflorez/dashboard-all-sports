@@ -13,10 +13,13 @@ function TotalProductos(){
  }, []);
 
  return(
-    <div>
-        <h2>Número de Productos</h2>
-        <h3>{total}</h3>
+    <div className="card text-bg-secondary mb-3">
+    <div className="card-header">PRODUCTOS</div>
+    <div className="card-body">
+        <h5 className="card-title">Total de productos disponibles</h5>
+        <p className="card-text">{total}</p>
     </div>
+</div>
  )
 }
 

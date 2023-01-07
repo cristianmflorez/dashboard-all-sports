@@ -12,21 +12,25 @@ function Categorias(){
         .catch(error => console.log(error));
         
  }, []);
- 
+
  return(
     <div>
-        <h2>Categorias</h2>
-        <ul>
-        {categorias.map((categoria,i)=>{
-            return(
-                <li key={i}>
-                    <h4>{categoria.category}</h4>
-                    <h4>Artículos en esta categoría: {categoria.countByCategory}</h4>
-                </li>
-            )
-        })}
-        </ul>
-       
+        <h2 className="text-center bg-dark border border-5 rounded p-3 text-white w-100">Categorías</h2>
+        <div className="container text-center">
+            <div className="row align-items-center">
+                {categorias.map((categoria,i)=>{
+                    return(
+                            <div key={i} className="m-1 rounded text-bg-secondary m-2 p-2 col">
+                                <div className="card-title p-2 m-2">{categoria.category.toUpperCase()}</div>
+                                <div className="card-body">
+                                    <h5 className="card-header p-2 m-2">Cantidad de artículos</h5>
+                                    <p className="card-text p-2 m-2">{categoria.countByCategory}</p>
+                                </div>
+                            </div>
+                    )
+                })}
+            </div>
+        </div>
     </div>
  )
 }
