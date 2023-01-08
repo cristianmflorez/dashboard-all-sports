@@ -32,7 +32,7 @@ function ListadoProductos(){
                                 <div className="card-body">
                                     <h5 className="card-title">{producto.nombre}</h5>
                                     <p className="card-text">Precio: {producto.precio}</p>
-                                    <p className="card-text">Descuento: {producto.descuento}</p>
+                                    <p className="card-text">Descuento: {producto.descuento}% OFF'</p>
                                     <p className="card-text">Descripción: {producto.descripcion}</p>
                                     <p className="card-text"><small className="text-muted">ID: {producto.idProductos}</small></p>
                                 </div>
