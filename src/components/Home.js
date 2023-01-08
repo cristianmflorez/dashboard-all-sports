@@ -5,6 +5,7 @@ import UltimoUsuario from "./UltimoUsuario";
 import Categorias from "./Categorias";
 
 import { Link } from "react-router-dom";
+import Ventas from "./Ventas";
 
 function Home(){
     return(
@@ -20,9 +21,16 @@ function Home(){
             <div className="col-12 col-sm-6"><UltimoProducto /></div>
           </div>
           <div><Categorias /></div>
+          <div>
+            <Ventas/>
+          </div>
         </div>
         <div className="m-4 p-4">
-            <Link to="/ListadoProductos"><button className="btn btn-outline-secondary">Listado de productos</button></Link>
+
+            <Link to="/ListadoProductos"><button className="btn btn-outline-secondary m-2">Lista de productos</button></Link>
+            <Link to="/ListadoUsuarios"><button className="btn btn-outline-secondary m-2">Lista de usuarios</button></Link>
+            <Link to="/Busquedas"><button className="btn btn-outline-secondary m-2">Búsquedas</button></Link>
+        
         </div>
       </main>
       <footer>

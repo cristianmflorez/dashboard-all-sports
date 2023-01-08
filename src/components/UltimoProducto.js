@@ -17,8 +17,6 @@ function UltimoProducto(){
         <div className="row g-0">
             <div className="col-md-4">
                 <img src={ultimoProducto.imagen} className="img-fluid rounded-start" alt="..."/>
-                
-                {console.log(ultimoProducto.imagen)}
             </div>
             <div className="col-md-8">
                 <div className="card-body">
