@@ -38,9 +38,9 @@ function BuscarProducto(){
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <p className="card-text">Nombre: {producto.nombre}</p>
-                            <p className="card-text">Descripción: {producto.descripcion}</p>
-                            <p className="card-text"><small className="text-muted">ID: {producto.idProductos}</small></p>
+                            {producto.imagen && <p className="card-text">Nombre: {producto.nombre}</p>}
+                            {producto.imagen && <p className="card-text">Descripción: {producto.descripcion}</p>}
+                            {producto.imagen && <p className="card-text"><small className="text-muted">ID: {producto.idProductos}</small></p>}
                         </div>
                     </div>
                 </div>

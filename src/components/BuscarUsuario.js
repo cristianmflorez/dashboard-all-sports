@@ -37,11 +37,11 @@ function BuscarUsuario(){
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <p className="card-text">Nombre: {usuario.nombre}</p>
-                            <p className="card-text">Correo electrónico: {usuario.email}</p>
-                            <p className="card-text">Número telefónico: {usuario.telefono}</p>
-                            <p className="card-text">Dirección: {usuario.direccion}</p>
-                            <p className="card-text"><small className="text-muted">ID: {usuario.idUsuarios}</small></p>
+                            {usuario.imagen && <p className="card-text">Nombre: {usuario.nombre}</p>}
+                           {usuario.imagen &&  <p className="card-text">Correo electrónico: {usuario.email}</p>}
+                           {usuario.imagen && <p className="card-text">Número telefónico: {usuario.telefono}</p>}
+                           {usuario.imagen && <p className="card-text">Dirección: {usuario.direccion}</p>}
+                           {usuario.imagen && <p className="card-text"><small className="text-muted">ID: {usuario.idUsuarios}</small></p>}
                         </div>
                     </div>
                 </div>
