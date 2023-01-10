@@ -10,7 +10,7 @@ function BuscarProducto(){
      }, [producto]);
 
     const buscarProducto =() => {
-        fetch('https://ill-gold-gorilla-gown.cyclic.app/api/products/'+idProducto.current.value)
+        fetch('https://alls-ports.onrender.com/api/products/'+idProducto.current.value)
             .then(response => response.json())
             .then(data => {
                 setProducto(data.data)

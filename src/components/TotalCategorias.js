@@ -4,7 +4,7 @@ function TotalCategorias(){
  const [total, setTotal] = useState ([]);
 
  useEffect(()=> {
-    fetch('https://ill-gold-gorilla-gown.cyclic.app/api/categories')
+    fetch('https://alls-ports.onrender.com/api/categories')
         .then(response => response.json())
         .then(data => {
             setTotal(data.data.length)

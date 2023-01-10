@@ -4,7 +4,7 @@ function UltimoUsuario(){
  const [ultimoUsuario, setUltimoUsuario] = useState ([]);
 
  useEffect(()=> {
-    fetch('https://ill-gold-gorilla-gown.cyclic.app/api/users/last')
+    fetch('https://alls-ports.onrender.com/api/users/last')
         .then(response => response.json())
         .then(data => {
             setUltimoUsuario(data.data)

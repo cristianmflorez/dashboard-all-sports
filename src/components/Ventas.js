@@ -4,7 +4,7 @@ function Ventas(){
  const [ventas, setVentas] = useState ([]);
 
  useEffect(()=> {
-    fetch('https://ill-gold-gorilla-gown.cyclic.app/api/purchases')
+    fetch('https://alls-ports.onrender.com/api/purchases')
         .then(response => response.json())
         .then(data => {
             setVentas(data.data)

@@ -10,7 +10,7 @@ function BuscarUsuario(){
      }, [usuario]);
 
     const buscarUsuario =() => {
-        fetch('https://ill-gold-gorilla-gown.cyclic.app/api/users/'+idUser.current.value)
+        fetch('https://alls-ports.onrender.com/api/users/'+idUser.current.value)
             .then(response => response.json())
             .then(data => {
                 setUsuario(data.data)

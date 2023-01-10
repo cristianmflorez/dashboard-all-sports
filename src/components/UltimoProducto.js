@@ -4,7 +4,7 @@ function UltimoProducto(){
  const [ultimoProducto, setUltimoProducto] = useState ([]);
 
  useEffect(()=> {
-    fetch('https://ill-gold-gorilla-gown.cyclic.app/api/products/last')
+    fetch('https://alls-ports.onrender.com/api/products/last')
         .then(response => response.json())
         .then(data => {
             setUltimoProducto(data.data)

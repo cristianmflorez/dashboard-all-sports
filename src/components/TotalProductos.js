@@ -4,7 +4,7 @@ function TotalProductos(){
  const [total, setTotal] = useState ([]);
 
  useEffect(()=> {
-    fetch('https://ill-gold-gorilla-gown.cyclic.app/api/products')
+    fetch('https://alls-ports.onrender.com/api/products')
         .then(response => response.json())
         .then(data => {
             setTotal(data.total)
